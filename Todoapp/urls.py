@@ -21,7 +21,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('todo_list/', views.todo_list, name='todo_list'),
-    path('todo_list/<int:pk>', views.todo_detail, name='todo_detail'),
-
-
+    path('todo_list/<int:pk>/', views.todo_detail, name='todo_detail'),
 ]
